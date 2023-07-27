@@ -20,7 +20,7 @@ function checkWinner() {
   if (board.every(cell => cell !== '')) {
     return 'draw';
   }
-
+//this is a test to leave a note in the code lol this works fine!!!
   return null;
 }
 
