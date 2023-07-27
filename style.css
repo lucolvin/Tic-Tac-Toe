@@ -1,32 +1,58 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #b0e0e6; /* Baby blue */
+}
+
+h1 {
+  margin: 20px;
+  color: #555;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 0 auto;
+  max-width: 315px;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #f1c40f; /* bright yellow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cell:hover {
+  background-color: transparent; /* Set the background to transparent for the sparkles effect */
+  transform: scale(.9) rotateZ(360deg); /* Apply scale and rotation for the sparkles */
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9), 0px 0px 30px rgba(255, 255, 255, 0.7), 0px 0px 40px rgba(255, 255, 255, 0.5);
+}
+
+/* Add some animation to indicate cell selection */
+.cell.selected {
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  h1 {
-    margin: 20px;
+  50% {
+    transform: scale(1.1);
   }
-  
-  .game-board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 5px;
-    margin: 0 auto;
-    max-width: 315px;
+  100% {
+    transform: scale(1);
   }
-  
-  .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    cursor: pointer;
-  }
-  
-  .cell:hover {
-    background-color: #e0e0e0;
-  }
-  
+}

@@ -20,7 +20,7 @@ function checkWinner() {
   if (board.every(cell => cell !== '')) {
     return 'draw';
   }
-//this is a test to leave a note in the code lol this works fine!!!
+
   return null;
 }
 
@@ -28,7 +28,7 @@ function makeMove(cellIndex) {
   if (board[cellIndex] === '') {
     board[cellIndex] = currentPlayer;
     cells[cellIndex].textContent = currentPlayer;
-    
+
     const winner = checkWinner();
     if (winner) {
       if (winner === 'draw') {
