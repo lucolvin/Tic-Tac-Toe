@@ -32,7 +32,7 @@ function makeMove(cellIndex) {
     const winner = checkWinner();
     if (winner) {
       if (winner === 'draw') {
-        alert('It\'s a Cat!');
+        alert('Oh no! it\'s a Cat!');
       } else {
         alert(`${winner} wins!`);
       }
