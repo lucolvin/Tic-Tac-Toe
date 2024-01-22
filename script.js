@@ -1,5 +1,3 @@
-<link rel="apple-touch-icon" href="Images\Luke Colvin-logos.jpeg">
-
 </link></>
 let currentPlayer = 'X';
 let board = ['', '', '', '', '', '', '', '', ''];
