@@ -1,3 +1,6 @@
+<><link rel="apple-touch-icon" href="Images\Luke Colvin-logos.jpeg"></><link rel="apple-touch-startup-image" href="Images\Luke Colvin-logos_black.png">
+
+</link></>
 let currentPlayer = 'X';
 let board = ['', '', '', '', '', '', '', '', ''];
 
