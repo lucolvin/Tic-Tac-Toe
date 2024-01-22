@@ -1,4 +1,3 @@
-</link></>
 let currentPlayer = 'X';
 let board = ['', '', '', '', '', '', '', '', ''];
 
